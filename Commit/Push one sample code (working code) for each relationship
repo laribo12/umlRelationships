@@ -1,0 +1,21 @@
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def study(self):
+        print(self.name, "is studying.")
+
+
+class Teacher:
+    def __init__(self, name):
+        self.name = name
+
+    def teach(self, student):
+        print(self.name, "is teaching", student.name)
+
+
+student1 = Student("John")
+teacher1 = Teacher("Mr. Smith")
+
+teacher1.teach(student1)
+student1.study()
